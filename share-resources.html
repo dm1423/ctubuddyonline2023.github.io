@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Share Resources</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+<!-------------- Header ---------------->
+
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class="nav"><a href="index.html">HOME</a></li>
+                        <li class="nav"><a href="course.html">COURSE</a></li>
+                        <li class="nav active"><a href="share-resources.html">SHARE RESOURCES</a></li>
+                        <li class="nav"><a href="blog.html">BLOG</a></li>
+                        <li class="nav"><a href="timetable.html">TIME TABLE</a></li>
+                        <li class="nav"><a href="contact.html">CONTACT US</a></li>
+                        <li class="nav"><a href="about.html">ABOUT</a></li>
+                        <li class="nav"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Share Resources</h1>
+        </section>
+
+
+<!---------- share resources ------------->
+<section class="share-resources">
+    <div class="comment-box-resources">
+
+        <h3>Enter your information to upload a New Document</h3>
+        <form class="comment-form-resources">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea class= "textarea" rows="5" placeholder="Your Description"></textarea><br><br>
+            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+            </form>
+        </form>
+
+    </div>
+
+</section>
+
+
+<!---------- Footer ------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to CTU, where excellence in education meets limitless opportunities. <br>Established with a vision to empower future leaders, thinkers, and innovators, 
+        CTU stands at the forefront of higher education.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i> 
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-instagram"></i> 
+            <i class="fa fa-linkedin"></i> 
+        </div>
+        <p>Made possible with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+</section>
+
+<!-------------------Footer section 2---------------->
+<footer>
+    <div class="feet-col">
+        <h2>Top Products</h2>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+    </div>
+    <div class="feet-col">
+        <h2>Quick Links</h2>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Service</li>
+    </div>
+    <div class="feet-col">
+        <h2>Features</h2>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+    </div>
+    <div class="feet-col">
+        <h2>Resources</h2>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+    </div>
+    <section class="newsletter">
+    <div class="feet-col">
+        <h5>Newsletter</h5>
+        <p>Enter your email to sign up for promo offers.</p>
+        <div>
+            <input type="email" placeholder="Your Email Address">
+            <a href="" class="hero-btn">SUBSCRIBE</a>
+        </div>
+    </div>
+    </section>
+</footer>
+
+<!----------Javascript for toggle menu function-------->        
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

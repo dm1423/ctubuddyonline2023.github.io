@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>FAQ</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+<!-------------- Header ---------------->
+
+
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li class="nav"><a href="index.html">HOME</a></li>
+                        <li class="nav"><a href="course.html">COURSE</a></li>
+                        <li class="nav"><a href="share-resources.html">SHARE RESOURCES</a></li>
+                        <li class="nav"><a href="blog.html">BLOG</a></li>
+                        <li class="nav"><a href="timetable.html">TIME TABLE</a></li>
+                        <li class="nav"><a href="contact.html">CONTACT US</a></li>
+                        <li class="nav"><a href="about.html">ABOUT</a></li>
+                        <li class="nav active"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>FAQ</h1>
+        </section>
+
+
+<!---------- faq ------------->
+
+
+<section>
+
+    <div class="wrapper">
+        <p></p>
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <button class="accordison">
+                What is Python?
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Python is a high-level, versatile, and interpreted programming language. It was created by Guido van Rossum and first released in 1991. 
+                    Python is known for its simplicity and readability, which makes it an excellent language for beginners and experienced programmers alike</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordison">
+                What is Java?
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Java is a widely-used, high-level, object-oriented programming language originally developed by James Gosling at Sun Microsystems and released in 1995. 
+                    It's designed to be platform-independent, which means that Java programs can run on any device that has a Java Virtual Machine (JVM) installed, 
+                    regardless of the underlying hardware and operating system.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordison">
+                What is Javascript
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>JavaScript is a high-level, versatile, and dynamically typed programming language primarily known for its role in web development. 
+                    Developed by Netscape, it was first released in 1995. 
+                    JavaScript is a core technology for building interactive and dynamic websites.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordison">
+                What is HTML?
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>HTML, or HyperText Markup Language, is the standard language used to create and design documents on the World Wide Web. 
+                    It forms the backbone of nearly all web content and provides the basic structure for web pages. 
+                    HTML uses a system of tags and attributes to define elements on a web page, such as text, images, links, forms, and multimedia.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordison">
+                What is CSS?
+                <i class="fa fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>CSS, or Cascading Style Sheets, is a stylesheet language used for describing the presentation and formatting of a document written in HTML or XML (
+                    including XML dialects such as SVG or XHTML). 
+                    CSS controls the layout, design, and appearance of web pages, allowing developers to separate the content and structure of a document from its visual presentation.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName
+        ("accordison");
+        var i;
+
+        for(i = 0; i < acc.length ; i++){
+            acc[i].addEventListener("click", function
+            (){
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active")
+
+                var pannel = this.nextElementSibling;
+
+                if(pannel.style.display === "block"){
+                    pannel.style.display = "none"
+                }else{
+                    pannel.style.display = "block"
+                }
+            });
+        }
+    </script>
+
+
+</section>
+
+
+
+
+
+
+<!---------- Footer ------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to CTU, where excellence in education meets limitless opportunities. <br>Established with a vision to empower future leaders, thinkers, and innovators, 
+        CTU stands at the forefront of higher education.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i> 
+            <i class="fa fa-twitter"></i> 
+            <i class="fa fa-instagram"></i> 
+            <i class="fa fa-linkedin"></i> 
+        </div>
+        <p>Made possible with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+</section>
+
+<!-------------------Footer section 2---------------->
+<footer>
+    <div class="feet-col">
+        <h2>Top Products</h2>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+    </div>
+    <div class="feet-col">
+        <h2>Quick Links</h2>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Service</li>
+    </div>
+    <div class="feet-col">
+        <h2>Features</h2>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+    </div>
+    <div class="feet-col">
+        <h2>Resources</h2>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+    </div>
+    <section class="newsletter">
+    <div class="feet-col">
+        <h5>Newsletter</h5>
+        <p>Enter your email to sign up for promo offers.</p>
+        <div>
+            <input type="email" placeholder="Your Email Address">
+            <a href="" class="hero-btn">SUBSCRIBE</a>
+        </div>
+    </div>
+    </section>
+</footer>
+
+<!----------Javascript for toggle menu function-------->        
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
